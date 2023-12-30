@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1f2029;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head-title{
+  font-size: 34px;
+  color: wheat;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width:350px;
+  margin-bottom: 20px;
+}
+.from_input{
+  padding: 8px 8px;
+  border-radius: 8px;
+  color: wheat;
+  background-color: #1f2029;
+  border: wheat 1px solid;
+  z-index: 2;
+
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 24px;
+}
+.from_input::placeholder{
+  color: wheat;
+  font-size: 24px;
+}
+.from_input:focus{
+  outline:1px solid gold;
+}
+.form_btn{
+  margin-top: 20px;
+  align-self: center;
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+  background-color: #2d303b;
+  border: wheat 2px solid;
+  will-change: filter;
+  transition: background-color 0.5s ease, 
+              border 0.5s ease, 
+              color 0.5s ease, 
+              filter 0.5s ease;
+  
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 24px;
+  color: wheat;
+}
+.form_btn:hover{
+  background-color: gold;
+  border: rgb(3, 3, 65) 2px solid;
+  color: rgb(3, 3, 65);
+  filter: drop-shadow(0 0 2em wheat);
+}
+
+.logo {
+  position: absolute;
+	top: 30px;
+	right: 30px;
+	display: block;
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo img {
+	height: 26px;
+	width: auto;
+	display: block;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em wheat);
+  cursor: pointer;
+}
+.calculate_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  z-index: 2;
+  padding: 12px;
+  border: 2px dotted wheat;
+  border-radius: 10px;
+  background-color: #1f2029;
+
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 24px;
+  color: wheat;
+}
